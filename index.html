@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet Store</title>
+</head>
+<link href="style.css" rel="stylesheet">
+<style>
+.page-heading{
+text-align: center;
+color:black;
+}
+.header-content{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.petshopimg{
+    width: 450px;
+}
+.content{
+    width:700px;
+    font-size: 20px;
+}
+.img-text {
+            color: palevioletred;
+            left: 40px;
+            position: relative;
+            font-size: 25px;
+            margin-top: 10px;
+
+        }
+
+        .div-container {
+            display: flex;
+            justify-content: space-around;
+        }
+
+        .div-img {
+            height: 150px;
+            width: 150px;
+            border-radius: 50%;
+            box-shadow: 0px 0px 10px 1px #ff8906;
+
+        }
+        .div-img:hover{
+            transition: 1s;
+            cursor: pointer;
+            box-shadow: 0px 0px 10px 1px purple;
+        }
+   
+
+    /*Moblie Device*/
+@media screen and (max-width:500px)
+    {
+.page-heading{
+    font-size:35px;
+    }
+
+.div-img {
+    height: 100px;
+    width: 100px;
+}
+.content{
+    width:500px;
+    font-size: 15px;
+}
+}
+    /*Tablet Device*/
+@media screen and (min-width:501px) and (max-widht:768px)  
+    {
+.page-heading{
+    font-size: 50px;
+}
+.div-img {
+    height: 150px;
+    width: 150px;
+}
+.content{
+    width:600px;
+    font-size: 20px;
+}
+    }
+    /*Desktop Device*/
+    @media screen and (min-width:769px){
+.page-heading{
+    font-size:60px;
+}.div-img {
+    height: 160px;
+    width: 160px;
+}
+.content{
+    width:700px;
+    font-size: 25px;
+}
+    }
+
+</style>
+<body>
+    <h1 class="page-heading">Pet Store🐈🐶🐇🐰🐹</h1>
+    <hr>
+    <div class="header-content"  alt="petshop">
+    <img src="./folder structure/images/petshop.jpg" class="petshopimg" alt="" />
+    <div class="content">
+<p>
+A pet shop or pet store is an essential services retailer which sells animals and pet care resources to the public.<br> A variety of animal supplies and pet accessories are also sold in pet shops.<br></p> 
+<p>
+The products sold include: food, treats, toys, collars, leashes, cat litter, cages and aquariums.<br>
+        pet stores are retailers that sell animals, pet supplies, and pet care resources</p>
+<p>
+ keeping pets can reduces stress,anxiety,and depression,ease loneliness,encourage exercise and playfulness,and even improve your cardiovascular health </p>
+</div>
+</div>
+<hr>
+<div class="div-container">
+    <div>
+        <img src="./folder structure/images/myimg.avif" class="div-img" >
+        <p class="img-text">
+      <a href="./folder structure/pages/cats.html">
+       Cats
+        </p>
+    </a>
+    </div>
+     <div>
+        <img src="./folder structure/images/myimg1.webp" class="div-img">
+        <p class="img-text">
+            <a href="./folder structure/pages/dogs.html">
+            Dogs</p>
+            </a>
+    </div>
+
+ <div>
+    <img src="./folder structure/images/myimg2.jfif" class="div-img">
+    <p class="img-text">
+        <a href="./folder structure/pages/birds.html">
+        Birds</p>
+        </a>
+</div>
+</div>
+</body>
+</html>
